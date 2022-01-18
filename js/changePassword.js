@@ -22,7 +22,7 @@ form.addEventListener("submit", async (e) => {
  
 
 
-    await fetch(`${baseurl}/users/${formData.email.value}/forgot-password`, {
+    await fetch(`${baseurl}/admin/${formData.email.value}/forgot-password`, {
 		method: "POST",
 		headers: {
 		  Accept: "application/json, text/plain, */*",
